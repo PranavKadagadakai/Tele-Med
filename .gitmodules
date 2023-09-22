@@ -1,0 +1,3 @@
+[submodule "chatbot_model"]
+	path = chatbot_model
+	url = https://github.com/9147/chatbot_model.git
