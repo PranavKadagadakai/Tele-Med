@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" >
+    {% load static  %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    
+    <script src="https://kit.fontawesome.com/b09e468a2d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <div class="logo">Veterans</div>
+        </div>
+        <div class="main">
+            <div class="left_section">
+                
+            </div>
+
+            <div class="right_section">
+                <div class="content">
+                    <div class="info">
+                        <pre> {{som}}</pre>
+                    </div>
+                </div>
+
+                <div class="entry">
+                    <form id="form_group" onsubmit="getanswer()" method="POST">
+                        {% csrf_token %}
+                        <input type="text" placeholder="enter the text" id="entryField" name="entryField">
+                        <input type="submit" id="submit_button" value="&#11000" name="submit_button">
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'index.js' %}"></script>
+</body>
+</html>
