@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.header {
+    width: 100vw;
+    height: 8vh;
+    position: relative;
+    background-color: #151515;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    height: 92vh;
+    background-color: #333333;
+    position: relative;
+    display: flex;
+}
+.logo{
+    color:  rgb(1, 241, 113);
+    font-size: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 0.8px;
+}
+.left_section {
+    background-color: #151515;
+    width: 20vw;
+    height: 100%;
+}
+
+.right_section {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: 100%;
+    background-color: #242424;
+    height: 80%;
+    padding:5rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.info{
+    width: 100%;
+    height: 100%;
+    word-spacing: 5px;
+    line-height: 27px;
+    font-size: 1.8rem;
+    border-radius: 10px;
+    background-color: #303030;
+    padding: 1rem;
+    font-weight: 500;
+    color: white;
+    overflow: auto;
+}
+.info:hover{
+    background-color: #404040;
+}
+.info::-webkit-scrollbar {
+    width: 5px;
+}
+
+.info::-webkit-scrollbar-thumb {
+    background-color: rgb(1, 241, 113);
+}
+
+.entry {
+    width: 100%;
+    height: 20%;
+    background-color: #242424;
+    display: grid;
+    place-items: center;
+}
+#entryField{
+    width: 90rem;
+    height: 5rem;
+    color: white;
+    background-color: #444444;
+    padding: 0.5rem 0.8rem;
+    border-radius: 15px;
+    border: none;
+    outline: 2px solid rgb(0, 255, 149);
+    outline-offset: 3px;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+    position: relative;
+}
+input::placeholder{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.8px;
+}
+#form_group{
+    position: relative;
+}
+#submit_button{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 15%;
+    border-radius: 0px 20px 20px 0;
+    height: 100%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static  %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://kit.fontawesome.com/b09e468a2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="layout">
+        <div class="header" style="color: white;">
+            <header class="header-text"
+                style="height: 100%;background-color: rgb(21, 21, 21);display: flex;align-items: center;justify-content: center;font-size: 2rem;">
+                Veterans
+            </header>
+        </div>
+        <div class="main">
+
+            <div class="content">
+                <div id="block"> <!--content SHOULD BE place below -->
+
+                    <div id="centerSection">
+                        <div id="centerSectionText" data-aos="fade-up">
+                            <!-- data-aos="fade-in" -->
+                            <h1>Chatbot :</h1>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic fugiat aspernatur, pariatur
+                            fuga
+                            dolorum culpa nisi voluptatum quod quam vero similique deleniti doloribus ad quia
+                            accusantium,
+                            asperiores deserunt praesentium voluptatem? Repellendus unde animi ipsa, dolorum alias totam
+                            harum quaerat quisquam corporis perspiciatis, sequi minus id expedita placeat doloribus
+                            consectetur maiores officia laboriosam. Impedit quod aspernatur perspiciatis repellendus quo
+                            ratione amet labore optio quos similique quibusdam, quam nulla, harum corporis fuga illo
+                            quidem
+                            velit eos officiis consequatur odit magnam. Consectetur quasi corporis recusandae at harum
+                            tenetur, repudiandae blanditiis illo soluta reprehenderit dolore! Porro culpa ad molestiae
+                            enim
+                            dolorum explicabo modi repellat, voluptatem facere, distinctio nostrum commodi voluptates
+                            rerum
+                            repellendus! Adipisci incidunt in nesciunt laborum nulla iste nostrum unde, dicta veritatis
+                            est
+                            voluptates numquam hic quas excepturi! Natus, possimus aperiam accusantium velit iste
+                            voluptatum
+                            consectetur voluptas esse, iusto quisquam voluptatibus omnis eos perspiciatis non ducimus
+                            reprehenderit tenetur explicabo provident nisi optio aspernatur adipisci dolore quia! Nobis
+                            beatae nostrum possimus obcaecati molestias libero nam porro soluta omnis earum, illum
+                            eligendi
+                            atque architecto quasi dolores. Pariatur ratione iusto quas provident. Quod aspernatur
+                            commodi
+
+                        </div>
+                        <div class="joinCreateSection">
+                            <div class="JoinCreateButton" id="centerSectionJoinButton"><a href="index/" id="Start">Start</a></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer" style="color: white;">
+            <footer class="footer-text"
+                style="height: 100%;background-color: rgb(21, 21, 21);display: flex;align-items: center;justify-content: center;font-size: 1.5rem;">
+                KLS Gogte institue of technology , belagavi
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 50,
+        });
+    </script>
+    <script src="{% static 'login.js' %}"></script>
+</body>
+
+</html>
+
+<!-- aos github -->
