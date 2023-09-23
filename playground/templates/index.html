@@ -26,12 +26,13 @@
             <div class="right_section">
                 <div class="content">
                     <div class="info">
-                        <pre> {{som}}</pre>
+                        {% comment %} <pre> {{som}}</pre> {% endcomment %}
+                        <pre>{{formValue}}</pre>
                     </div>
                 </div>
 
                 <div class="entry">
-                    <form id="form_group" onsubmit="getanswer()" method="POST">
+                    <form id="form_group" onsubmit="getanswer()" method="POST" action="">
                         {% csrf_token %}
                         <input type="text" placeholder="enter the text" id="entryField" name="entryField">
                         <input type="submit" id="submit_button" value="&#11000" name="submit_button">
