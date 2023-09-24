@@ -19,11 +19,11 @@
             <div class="logo">Veterans</div>
         </div>
         <div class="main">
-            <div class="left_section">
-                
-            </div>
+
 
             <div class="right_section">
+                <form id="form_group" onsubmit="getanswer()" method="POST" action="">
+                        {% csrf_token %}
                 <div class="content">
                     <div class="info">
                         {% comment %} <pre> {{som}}</pre> {% endcomment %}
@@ -32,14 +32,15 @@
                 </div>
 
                 <div class="entry">
-                    <form id="form_group" onsubmit="getanswer()" method="POST" action="">
-                        {% csrf_token %}
+
                         <input type="text" placeholder="enter the text" id="entryField" name="entryField">
                         <input type="submit" id="submit_button" value="&#11000" name="submit_button">
-                    </form>
+
 
                 </div>
+                </form>
             </div>
+
         </div>
     </div>
     <script src="{% static 'index.js' %}"></script>

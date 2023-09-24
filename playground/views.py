@@ -10,7 +10,7 @@ def index(request):
     a=""
     if request.method=="POST":
         val=request.POST.get("entryField")
-        a=model1.getAnswer(val)
+        a="\n"+model1.getAnswer(val)
     return render(request,"index.html",{"formValue":a})
 
 def login(request):
