@@ -22,12 +22,12 @@
 
 
             <div class="right_section">
-                <form id="form_group" onsubmit="getanswer()" method="POST" action="">
+    <form id="form_group" onsubmit="getanswer()" method="POST" action="">
                         {% csrf_token %}
                 <div class="content">
                     <div class="info">
                         {% comment %} <pre> {{som}}</pre> {% endcomment %}
-                        <pre>{{formValue}}</pre>
+                        <textarea id="textarea_id"  name="data" >{{formValue}}</textarea>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
 
 
                 </div>
-                </form>
+            </form>
             </div>
 
         </div>

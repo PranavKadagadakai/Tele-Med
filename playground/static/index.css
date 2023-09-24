@@ -8,12 +8,14 @@
 html {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+
 }
 
 .container {
     background-color: black;
     height: 100vh;
     width: 100vw;
+    overflow:hidden;
     position: relative;
 }
 
@@ -32,6 +34,7 @@ html {
     background-color: #333333;
     position: relative;
     display: flex;
+
 }
 .logo{
     color:  rgb(1, 241, 113);
@@ -49,7 +52,6 @@ html {
 }
 
 .right_section {
-    background-color:red;
     width: 100%;
     height: 100%;
 }
@@ -57,11 +59,25 @@ html {
 .content {
     width: 100%;
     background-color: #242424;
-    height: 80vh;
+    height: 80%;
     padding:5rem;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+}
+textarea{
+width: 99%;
+height: 98%;
+background-color:#404040;
+border-color:#404040;
+color:white;
+}
+textarea ::-webkit-scrollbar-thumb{
+  background-color: rgb(1, 241, 113);
+  border-color:rgb(1, 241, 113);
+}
+textarea::-webkit-scrollbar {
+    width: 5px;
 }
 .info{
     width: 100%;
@@ -70,26 +86,24 @@ html {
     line-height: 27px;
     font-size: 1.8rem;
     border-radius: 10px;
-    background-color: #303030;
+    background-color: #404040;
     padding: 1rem;
     font-weight: 500;
     color: white;
     overflow: auto;
 }
-.info:hover{
-    background-color: #404040;
-}
+
 .info::-webkit-scrollbar {
     width: 5px;
 }
 
 .info::-webkit-scrollbar-thumb {
-    background-color: rgb(1, 241, 113);
+    background-color: white;
 }
 
 .entry {
     width: 100%;
-    height: 20vh;
+    height: 20%;
     background-color: #242424;
     display: grid;
     place-items: center;

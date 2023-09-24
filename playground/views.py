@@ -7,11 +7,14 @@ from chatbot_model import model1
 
 # Create your views here.  request handler
 def index(request):
-    a=""
+    data=""
     if request.method=="POST":
-        val=request.POST.get("entryField")
-        a="\n"+model1.getAnswer(val)
-    return render(request,"index.html",{"formValue":a})
+        question=request.POST.get("entryField")
+        data=request.POST.get("data")
+        ans=model1.getAnswer(question)
+        data += "\n" + "Q) " + question + "\n" + "ans: " + ans+"\n"
+        print("data:", data)
+    return render(request,"index.html",{"formValue":data})
 
 def login(request):
     return render(request,"login.html")
