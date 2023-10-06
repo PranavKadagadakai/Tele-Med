@@ -26,10 +26,11 @@
 .main {
     height: 88%;
     position: relative;
+    background: url("https://wallpaperset.com/w/full/1/a/e/529286.jpg");
 }
 
 .content {
-    paddpything: 1rem;
+    padding: 1rem;
     box-sizing: border-box;
     position: absolute;
     height: 100%;

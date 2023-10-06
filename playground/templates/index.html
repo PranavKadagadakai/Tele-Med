@@ -7,6 +7,7 @@
     <title>Hackathon</title>
     <link rel="stylesheet" >
     {% load static  %}
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
     <link rel="stylesheet" href="{% static 'index.css' %}">
     
     <script src="https://kit.fontawesome.com/b09e468a2d.js" crossorigin="anonymous"></script>
@@ -16,22 +17,22 @@
 
     <div class="container">
         <div class="header">
-            <div class="logo">Veterans</div>
+            <div class="logo"><img src="/media/logo-removebg.png" height="35px"></img>LawMiner</div>
         </div>
         <div class="main">
 
 
-            <div class="right_section">
+            <div class="right_section" style="background: url('https://wallpaperset.com/w/full/1/a/e/529286.jpg');">
     <form id="form_group" onsubmit="getanswer()" method="POST" action="">
                         {% csrf_token %}
-                <div class="content">
+                <div class="content" style="background: url('https://wallpaperset.com/w/full/1/a/e/529286.jpg');">
                     <div class="info">
                         {% comment %} <pre> {{som}}</pre> {% endcomment %}
-                        <textarea id="textarea_id"  name="data" >{{formValue}}</textarea>
+                        <textarea style="background: url('https://wallpaperset.com/w/full/1/a/e/529286.jpg');" id="textarea_id"  name="data" >{{formValue}}</textarea>
                     </div>
                 </div>
 
-                <div class="entry">
+                <div class="entry" >
 
                         <input type="text" placeholder="enter the text" id="entryField" name="entryField">
                         <input type="submit" id="submit_button" value="&#11000" name="submit_button">

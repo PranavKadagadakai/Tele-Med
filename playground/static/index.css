@@ -23,7 +23,7 @@ html {
     width: 100vw;
     height: 8vh;
     position: relative;
-    background-color: #151515;
+    background: url("https://wallpaperset.com/w/full/1/a/e/529286.jpg");
     padding: 0.5rem;
     box-sizing: border-box;
 }
@@ -31,13 +31,12 @@ html {
 .main {
     width: 100vw;
     height: 92vh;
-    background-color: #333333;
     position: relative;
     display: flex;
 
 }
 .logo{
-    color:  rgb(1, 241, 113);
+    color:  white;
     font-size: 3.2rem;
     display: flex;
     align-items: center;
@@ -68,9 +67,8 @@ html {
 textarea{
 width: 99%;
 height: 98%;
-background-color:#404040;
-border-color:#404040;
 color:white;
+font-size:1.2em;
 }
 textarea ::-webkit-scrollbar-thumb{
   background-color: rgb(1, 241, 113);
@@ -86,8 +84,6 @@ textarea::-webkit-scrollbar {
     line-height: 27px;
     font-size: 1.8rem;
     border-radius: 10px;
-    background-color: #404040;
-    padding: 1rem;
     font-weight: 500;
     color: white;
     overflow: auto;
@@ -104,7 +100,6 @@ textarea::-webkit-scrollbar {
 .entry {
     width: 100%;
     height: 20%;
-    background-color: #242424;
     display: grid;
     place-items: center;
 }
@@ -112,7 +107,7 @@ textarea::-webkit-scrollbar {
     width: 90rem;
     height: 5rem;
     color: white;
-    background-color: #444444;
+    background: url("https://wallpaperset.com/w/full/1/a/e/529286.jpg");
     padding: 0.5rem 0.8rem;
     border-radius: 15px;
     border: none;

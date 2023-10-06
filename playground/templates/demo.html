@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     {% load static  %}
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
-    <link rel="stylesheet" href="{% static 'login.css' %}">
+    <link rel="stylesheet" href="{% static 'demo.css' %}">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script src="https://kit.fontawesome.com/b09e468a2d.js" crossorigin="anonymous"></script>
@@ -19,7 +18,7 @@
         <div class="header" style="color: white;">
             <header class="header-text"
                 style="height: 100%;background-color: rgb(21, 21, 21);display: flex;align-items: center;justify-content: center;font-size: 2rem;">
-                <img src="media/logo-removebg.png" height="25px"></img>LawMiner
+                Veterans
             </header>
         </div>
         <div class="main">
@@ -30,8 +29,9 @@
                     <div id="centerSection">
                         <div id="centerSectionText" data-aos="fade-up">
                             <!-- data-aos="fade-in" -->
-                            <h1>LawMiner</h1>
-                            The chatbot utilizes a BERT-based AI model to analyze the posed question and generate a suitable response based on the provided content:<br>
+                            <h1>Chatbot :</h1>
+                            This project uses the BERT-based question-answering model to answer questions based on text extracted from a PDF file. It includes the following components:<br>
+                            *PDF text extraction using PyPDF2.<br>
                             *Pretrained BERT model for question answering.<br>
                             *Text preprocessing to clean and format the extracted text.
 
@@ -46,7 +46,12 @@
             </div>
 
         </div>
-
+        <div class="footer" style="color: white;">
+            <footer class="footer-text"
+                style="height: 100%;background-color: rgb(21, 21, 21);display: flex;align-items: center;justify-content: center;font-size: 1.5rem;">
+                KLS Gogte institue of technology , belagavi
+            </footer>
+        </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
