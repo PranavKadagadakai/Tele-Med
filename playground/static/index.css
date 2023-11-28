@@ -12,7 +12,7 @@ html {
 }
 
 .container {
-    background-color: black;
+    background-color: rgb(236, 232, 243);
     height: 100vh;
     width: 100vw;
     overflow:hidden;
@@ -45,34 +45,39 @@ html {
     letter-spacing: 0.8px;
 }
 .left_section {
-    background-color: #151515;
+    background-color: #191818;
     width: 20vw;
     height: 100%;
+    background-size: cover;
 }
 
 .right_section {
     width: 100%;
     height: 100%;
+    
 }
 
 .content {
     width: 100%;
-    background-color: #242424;
+    background-color: #dcd3d3;
     height: 80%;
     padding:5rem;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    background-image: url('https://www.shutterstock.com/image-photo/medicine-doctor-touching-electronic-medical-260nw-1169699956.jpg');
+    background-size: cover;
+    
 }
 textarea{
 width: 99%;
-height: 98%;
-color:white;
+height: 80%;
+color:rgb(246, 242, 242);
 font-size:1.2em;
 }
-textarea ::-webkit-scrollbar-thumb{
-  background-color: rgb(1, 241, 113);
-  border-color:rgb(1, 241, 113);
+ textarea ::-webkit-scrollbar-thumb{
+  background-color: rgb(191, 211, 200);
+  border-color:rgb(1, 241, 113); 
 }
 textarea::-webkit-scrollbar {
     width: 5px;
@@ -83,7 +88,7 @@ textarea::-webkit-scrollbar {
     word-spacing: 5px;
     line-height: 27px;
     font-size: 1.8rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     font-weight: 500;
     color: white;
     overflow: auto;

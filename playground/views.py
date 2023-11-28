@@ -13,7 +13,7 @@ def index(request):
         data=request.POST.get("data")
         ans=model1.getAnswer(question)
         data += "\n" + "User: " + question + "\n" + "Bot:  " + ans+"\n"
-        # print("data:", data)
+        print("data:", data)
     return render(request,"index.html",{"formValue":data})
 
 def login(request):
