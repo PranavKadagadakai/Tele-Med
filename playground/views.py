@@ -11,10 +11,19 @@ def index(request):
     data = "Bot:  Hey!! I am your Tele-Med KIOSK. Tell me your symptoms and I will do the diagnosis!!\n"
     if request.method == "POST":
         question = request.POST.get("entryField")
-        data = request.POST.get("data")
+        data_received = request.POST.get("data")
         ans = model1.getAnswer(question)
-        data += "\n" + "User: " + question + "\n" + "Bot:  " + ans + "\n"
+
+        if isinstance(ans, dict) and len(ans) == 3:
+            data += "\n" + "User: " + question + "\n" + "Bot:"
+            for key, value in ans.items():
+                data += "\n" + f"{key}: {value}"
+        else:
+            # Convert ans to a string before appending to data
+            data += "\n" + "User: " + question + "\n" + "Bot: " + str(ans)
+
         print("data:", data)
+
     return render(request, "index.html", {"formValue": data})
 
 
