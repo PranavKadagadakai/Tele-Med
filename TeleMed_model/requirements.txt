@@ -121,7 +121,7 @@ parso==0.8.3
 pathy==0.10.2
 pickleshare==0.7.5
 Pillow==10.0.1
-pip==23.2.1
+pip==23.3
 pkginfo==1.9.6
 platformdirs==3.10.0
 preshed==3.0.9
