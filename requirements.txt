@@ -5,7 +5,7 @@ charset-normalizer==3.3.0
 chex==0.1.85
 click==8.1.7
 colorama==0.4.6
-Django==5.0
+Django==4.2.7
 etils==1.5.2
 filelock==3.12.4
 flax==0.7.5
