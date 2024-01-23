@@ -1,6 +1,0 @@
-Collecting pypdf
-  Downloading pypdf-4.0.0-py3-none-any.whl.metadata (7.4 kB)
-Downloading pypdf-4.0.0-py3-none-any.whl (283 kB)
-   ---------------------------------------- 283.9/283.9 kB 1.1 MB/s eta 0:00:00
-Installing collected packages: pypdf
-Successfully installed pypdf-4.0.0
