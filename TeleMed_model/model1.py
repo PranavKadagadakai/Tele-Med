@@ -19,7 +19,7 @@ def extract_text_from_pdf(file_path):
 
 
 text = extract_text_from_pdf(
-    "E:/PranavSK/Tele-Med/chatbot_model/Med_Data.pdf")  # Provide pdf path, with symptom & disease data
+    "E:/PranavSK/Projects/Python_Django/Tele-Med/TeleMed_model/Med_Data.pdf")  # Provide pdf path, with symptom & disease data
 
 # Step 1: Remove special characters and symbols
 cleaned_text = ''.join(e for e in text if (e.isalnum() or e.isspace() or e in ['.', ',', ';', ':', '(', ')']))
