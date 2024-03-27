@@ -20,7 +20,7 @@ def index(request):
                 data += "\n" + f"{key}: {value}"
         else:
             # Convert ans to a string before appending to data
-            data += "\n" + "User: " + question + "\n" + "Bot: " + str(ans)
+            data += "\n" + "User: " + question + "\n" + "Bot: " + str(ans[0]['answer'])
 
         print("data:", data)
 
