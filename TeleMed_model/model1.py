@@ -78,8 +78,6 @@ def getAnswer(question):
         with open('answers.json', 'w') as file2:
             d[question] = answers
             json.dump(d, file2)
-    # with open('answers.json','w') as file:
-    #     json.dump({"manoj":"manoj"},file)
     # answers = process_text_chunk(chunk_text, question)
     # # Sort answers by confidence level (higher confidence first)
     # answers.sort(key=lambda x: x["confidence"], reverse=True)
@@ -93,7 +91,8 @@ def getAnswer(question):
     for i, answer in enumerate(answers[:3]):
         if answer['answer'] not in ("", "[CLS]"):
             formatted_confidence = "{:.2f}".format(answer['confidence'])
-            result_ext.append({"answer": answer['answer'], "confidence": float(formatted_confidence)})
+            if float(formatted_confidence) > 0:
+                result_ext.append({"answer": answer['answer'], "confidence": float(formatted_confidence)})
 
     print(result_internal)
 
